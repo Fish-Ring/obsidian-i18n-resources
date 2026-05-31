@@ -1,0 +1,436 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "plugin": "edit-history",
+        "version": "1.0.0",
+        "title": "Edit History",
+        "description": "Edit History Localization & Tweaks",
+        "language": "zh-cn",
+        "supportedVersions": "0.3.0",
+        "author": ""
+    },
+    "dict": {
+        "main.js": {
+            "ast": [
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "debug",
+                    "target": "调试"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Verbose",
+                    "target": "详细"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "info",
+                    "target": "信息"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Information",
+                    "target": "信息"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "warn",
+                    "target": "警告"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Warnings",
+                    "target": "警告"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "error",
+                    "target": "错误"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Errors",
+                    "target": "错误"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createEl",
+                    "source": "small",
+                    "target": "small"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createEl",
+                    "source": "span",
+                    "target": "span"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Copy",
+                    "target": "复制"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Previous",
+                    "target": "上一个"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Next",
+                    "target": "下一个"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Minimum number of seconds that must pass from the previous edit to store a new edit, set to 0 to disable. Modifications done between those seconds will be merged into the next edit, reducing the edit history file size at the expense of less history granularity.",
+                    "target": "存储新编辑必须距离上次编辑经过的最少秒数，设为 0 以禁用。在此时间间隔内所做的修改将合并到下一次编辑中，以减少编辑历史文件大小，但会降低历史记录的详细程度。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Maximum number of edits to keep, set to 0 for no limit. Older edits will be deleted from the history in the next update, reducing the edit history file size at the expense of less history.",
+                    "target": "保留的最大编辑数量，设为 0 表示无限制。超出限制时，较旧的编辑将在下次更新时从历史记录中删除，以减少编辑历史文件大小，但会减少历史记录。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Oldest edit to keep in seconds, eg set to 3600 to delete edits that are more than one hour old, set to 0 for no limit. Older edits will be deleted from the history in the next update, reducing the edit history file size at the expense of less history.",
+                    "target": "保留的最旧编辑时间（秒），例如设为 3600 可删除超过一小时的编辑，设为 0 表示无限制。较旧的编辑将在下次更新时从历史记录中删除，以减少编辑历史文件大小，但会减少历史记录。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Maximum size of the history file in kilobytes, set to 0 for no limit. When over the size, edits will be deleted from the history in the next update, older edits first, reducing the edit history file size at the expense of less history.",
+                    "target": "历史文件的最大大小（千字节），设为 0 表示无限制。超出大小时，将从历史记录中删除编辑，优先删除较旧的编辑，以减少编辑历史文件大小，但会减少历史记录。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Comma separated list of file extensions to store edits for (case insensitive). Empty to store edits for all files.\nNote if an extension is removed, old edit history files will need to be removed manually.",
+                    "target": "存储编辑的文件扩展名列表（以逗号分隔，不区分大小写）。留空则为所有文件存储编辑。\n注意：如果移除了某个扩展名，需要手动删除旧的编辑历史文件。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Comma separated list of substrings of note filepaths to not store edits for (case insensitive). Empty to store edits for all files.\nUse forward slashes as folder separator\nNote if a substring is added, old edit history files will need to be removed manually.",
+                    "target": "不存储编辑的笔记文件路径子字符串列表（以逗号分隔，不区分大小写）。留空则为所有文件存储编辑。\n使用正斜杠作为文件夹分隔符\n注意：如果添加了某个子字符串，需要手动删除旧的编辑历史文件。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Show edit history file information on the status bar. Click the status bar to show the edit history for the current file.",
+                    "target": "在状态栏显示编辑历史文件信息。点击状态栏可显示当前文件的编辑历史。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "In the diff view, display the diff raw, timeline, inline, horizontally (side by side), or vertically (top by bottom).",
+                    "target": "在差异视图中，以原始格式、时间线、内联、水平（并排）或垂直（上下）方式显示差异。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Show whitespace in the diff view.",
+                    "target": "在差异视图中显示空白字符。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Messages to show in the javascript console.",
+                    "target": "在 JavaScript 控制台中显示的消息。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Minimum seconds between edits",
+                    "target": "编辑之间的最小秒数"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Maximum number of edits",
+                    "target": "最大编辑次数"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Maximum age of edits",
+                    "target": "编辑的最大保留时间"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Maximum size of the history file (KB)",
+                    "target": "历史文件的最大大小（KB）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "File extension whitelist",
+                    "target": "文件扩展名白名单"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Filepath substring blacklist",
+                    "target": "文件路径子字符串黑名单"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Show on status bar",
+                    "target": "在状态栏上显示"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Diff display type",
+                    "target": "差异显示类型"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Show whitespace",
+                    "target": "显示空白字符"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Debug level",
+                    "target": "调试级别"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "? edits",
+                    "target": "? 次编辑"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Edits for ",
+                    "target": "编辑 "
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Whitespace",
+                    "target": "空白字符"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Open edit history for this file",
+                    "target": "打开此文件的编辑历史"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Save current edit in the edit history",
+                    "target": "在编辑历史中保存当前编辑"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "No edit history",
+                    "target": "无编辑历史"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "No edit history file",
+                    "target": "无编辑历史文件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Empty edit history",
+                    "target": "编辑历史为空"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Created by ",
+                    "target": "创建者 "
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Antonio Tejada",
+                    "target": "Antonio Tejada"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "General",
+                    "target": "通用"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Appearance",
+                    "target": "外观"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Debugging",
+                    "target": "调试"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "setText(\"? edits\")",
+                    "target": "setText(\"? edits\")"
+                },
+                {
+                    "source": "setText(\n      `${numFiles}/${filepaths.length} edit${filepaths.length > 1 ? \"s \" : \" \"}${fileSize}/${zipFile.stat.size} bytes compressed, ${(_a = this.app.workspace.getActiveFile()) == null ? void 0 : _a.stat.size} note bytes`\n    )",
+                    "target": "setText(\n      `${numFiles}/${filepaths.length} edit${filepaths.length > 1 ? \"s \" : \" \"}${fileSize}/${zipFile.stat.size} bytes compressed, ${(_a = this.app.workspace.getActiveFile()) == null ? void 0 : _a.stat.size} note bytes`\n    )"
+                },
+                {
+                    "source": "Notice(\"\", 0);\n          }\n        }\n        notice == null ? void 0 : notice.setMessage(`Computing timeline ${pct}%`);\n        nextReportPct += reportIntervalPct;\n      }\n      const diff = await zip.file(filepath).async(\"string\")",
+                    "target": "Notice(\"\", 0);\n          }\n        }\n        notice == null ? void 0 : notice.setMessage(`Computing timeline ${pct}%`);\n        nextReportPct += reportIntervalPct;\n      }\n      const diff = await zip.file(filepath).async(\"string\")"
+                },
+                {
+                    "source": "setText(\"Edits for \")",
+                    "target": "setText(\"Edits for \")"
+                },
+                {
+                    "source": "setName(\"Minimum seconds between edits\")",
+                    "target": "setName(\"Minimum seconds between edits\")"
+                },
+                {
+                    "source": "setDesc(\"Minimum number of seconds that must pass from the previous edit to store a new edit, set to 0 to disable. Modifications done between those seconds will be merged into the next edit, reducing the edit history file size at the expense of less history granularity.\")",
+                    "target": "setDesc(\"Minimum number of seconds that must pass from the previous edit to store a new edit, set to 0 to disable. Modifications done between those seconds will be merged into the next edit, reducing the edit history file size at the expense of less history granularity.\")"
+                },
+                {
+                    "source": "setName(\"Maximum number of edits\")",
+                    "target": "setName(\"Maximum number of edits\")"
+                },
+                {
+                    "source": "setDesc(\"Maximum number of edits to keep, set to 0 for no limit. Older edits will be deleted from the history in the next update, reducing the edit history file size at the expense of less history.\")",
+                    "target": "setDesc(\"Maximum number of edits to keep, set to 0 for no limit. Older edits will be deleted from the history in the next update, reducing the edit history file size at the expense of less history.\")"
+                },
+                {
+                    "source": "setName(\"Maximum age of edits\")",
+                    "target": "setName(\"Maximum age of edits\")"
+                },
+                {
+                    "source": "setDesc(\"Oldest edit to keep in seconds, eg set to 3600 to delete edits that are more than one hour old, set to 0 for no limit. Older edits will be deleted from the history in the next update, reducing the edit history file size at the expense of less history.\")",
+                    "target": "setDesc(\"Oldest edit to keep in seconds, eg set to 3600 to delete edits that are more than one hour old, set to 0 for no limit. Older edits will be deleted from the history in the next update, reducing the edit history file size at the expense of less history.\")"
+                },
+                {
+                    "source": "setName(\"Maximum size of the history file (KB)\")",
+                    "target": "setName(\"Maximum size of the history file (KB)\")"
+                },
+                {
+                    "source": "setDesc(\"Maximum size of the history file in kilobytes, set to 0 for no limit. When over the size, edits will be deleted from the history in the next update, older edits first, reducing the edit history file size at the expense of less history.\")",
+                    "target": "setDesc(\"Maximum size of the history file in kilobytes, set to 0 for no limit. When over the size, edits will be deleted from the history in the next update, older edits first, reducing the edit history file size at the expense of less history.\")"
+                },
+                {
+                    "source": "setName(\"File extension whitelist\")",
+                    "target": "setName(\"File extension whitelist\")"
+                },
+                {
+                    "source": "setName(\"Filepath substring blacklist\")",
+                    "target": "setName(\"Filepath substring blacklist\")"
+                },
+                {
+                    "source": "setName(\"Show on status bar\")",
+                    "target": "setName(\"Show on status bar\")"
+                },
+                {
+                    "source": "setDesc(\"Show edit history file information on the status bar. Click the status bar to show the edit history for the current file.\")",
+                    "target": "setDesc(\"Show edit history file information on the status bar. Click the status bar to show the edit history for the current file.\")"
+                },
+                {
+                    "source": "setName(\"Diff display type\")",
+                    "target": "setName(\"Diff display type\")"
+                },
+                {
+                    "source": "setDesc(\"In the diff view, display the diff raw, timeline, inline, horizontally (side by side), or vertically (top by bottom).\")",
+                    "target": "setDesc(\"In the diff view, display the diff raw, timeline, inline, horizontally (side by side), or vertically (top by bottom).\")"
+                },
+                {
+                    "source": "setName(\"Show whitespace\")",
+                    "target": "setName(\"Show whitespace\")"
+                },
+                {
+                    "source": "setDesc(\"Show whitespace in the diff view.\")",
+                    "target": "setDesc(\"Show whitespace in the diff view.\")"
+                },
+                {
+                    "source": "setName(\"Debug level\")",
+                    "target": "setName(\"Debug level\")"
+                },
+                {
+                    "source": "setDesc(\"Messages to show in the javascript console.\")",
+                    "target": "setDesc(\"Messages to show in the javascript console.\")"
+                },
+                {
+                    "source": "text = \"\"",
+                    "target": "text = \"\""
+                },
+                {
+                    "source": "name = \"\"",
+                    "target": "name = \"\""
+                },
+                {
+                    "source": "name: \"Open edit history for this file\"",
+                    "target": "name: \"Open edit history for this file\""
+                },
+                {
+                    "source": "name: \"Save current edit in the edit history\"",
+                    "target": "name: \"Save current edit in the edit history\""
+                },
+                {
+                    "source": "text: \" \"",
+                    "target": "text: \" \""
+                },
+                {
+                    "source": "text: \"No edit history\"",
+                    "target": "text: \"No edit history\""
+                },
+                {
+                    "source": "text: \"No edit history file\"",
+                    "target": "text: \"No edit history file\""
+                },
+                {
+                    "source": "text: \"Empty edit history\"",
+                    "target": "text: \"Empty edit history\""
+                },
+                {
+                    "source": "text: \"Created by \"",
+                    "target": "text: \"Created by \""
+                },
+                {
+                    "source": "text: \"Antonio Tejada\"",
+                    "target": "text: \"Antonio Tejada\""
+                },
+                {
+                    "source": "text: \"General\"",
+                    "target": "text: \"General\""
+                },
+                {
+                    "source": "text: \"Appearance\"",
+                    "target": "text: \"Appearance\""
+                },
+                {
+                    "source": "text: \"Debugging\"",
+                    "target": "text: \"Debugging\""
+                }
+            ]
+        }
+    }
+}
