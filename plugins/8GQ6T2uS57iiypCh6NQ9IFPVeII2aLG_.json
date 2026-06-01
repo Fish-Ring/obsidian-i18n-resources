@@ -332,51 +332,51 @@
                 },
                 {
                     "source": "setName(\"Maximum size of the history file (KB)\")",
-                    "target": "setName(\"Maximum size of the history file (KB)\")"
+                    "target": "setName(\"历史文件的最大大小（KB）\")"
                 },
                 {
                     "source": "setDesc(\"Maximum size of the history file in kilobytes, set to 0 for no limit. When over the size, edits will be deleted from the history in the next update, older edits first, reducing the edit history file size at the expense of less history.\")",
-                    "target": "setDesc(\"Maximum size of the history file in kilobytes, set to 0 for no limit. When over the size, edits will be deleted from the history in the next update, older edits first, reducing the edit history file size at the expense of less history.\")"
+                    "target": "setDesc(\"历史文件的最大大小（以千字节为单位），设为0表示无限制。当超出此大小时，将在下次更新中从历史记录中删除较早的编辑，以减少历史文件的大小，但会丢失部分历史记录。\")"
                 },
                 {
                     "source": "setName(\"File extension whitelist\")",
-                    "target": "setName(\"File extension whitelist\")"
+                    "target": "setName(\"文件扩展名白名单\")"
                 },
                 {
                     "source": "setName(\"Filepath substring blacklist\")",
-                    "target": "setName(\"Filepath substring blacklist\")"
+                    "target": "setName(\"文件路径子字符串黑名单\")"
                 },
                 {
                     "source": "setName(\"Show on status bar\")",
-                    "target": "setName(\"Show on status bar\")"
+                    "target": "setName(\"在状态栏上显示\")"
                 },
                 {
                     "source": "setDesc(\"Show edit history file information on the status bar. Click the status bar to show the edit history for the current file.\")",
-                    "target": "setDesc(\"Show edit history file information on the status bar. Click the status bar to show the edit history for the current file.\")"
+                    "target": "setDesc(\"在状态栏上显示编辑历史文件信息。点击状态栏可查看当前文件的编辑历史。\")"
                 },
                 {
                     "source": "setName(\"Diff display type\")",
-                    "target": "setName(\"Diff display type\")"
+                    "target": "setName(\"差异显示类型\")"
                 },
                 {
                     "source": "setDesc(\"In the diff view, display the diff raw, timeline, inline, horizontally (side by side), or vertically (top by bottom).\")",
-                    "target": "setDesc(\"In the diff view, display the diff raw, timeline, inline, horizontally (side by side), or vertically (top by bottom).\")"
+                    "target": "setDesc(\"在差异视图中，以原始差异、时间线、内联、水平（并排）或垂直（上下）方式显示差异。\")"
                 },
                 {
                     "source": "setName(\"Show whitespace\")",
-                    "target": "setName(\"Show whitespace\")"
+                    "target": "setName(\"显示空白字符\")"
                 },
                 {
                     "source": "setDesc(\"Show whitespace in the diff view.\")",
-                    "target": "setDesc(\"Show whitespace in the diff view.\")"
+                    "target": "setDesc(\"在差异视图中显示空白字符。\")"
                 },
                 {
                     "source": "setName(\"Debug level\")",
-                    "target": "setName(\"Debug level\")"
+                    "target": "setName(\"调试级别\")"
                 },
                 {
                     "source": "setDesc(\"Messages to show in the javascript console.\")",
-                    "target": "setDesc(\"Messages to show in the javascript console.\")"
+                    "target": "setDesc(\"在 JavaScript 控制台中显示的消息。\")"
                 },
                 {
                     "source": "text = \"\"",
@@ -388,11 +388,11 @@
                 },
                 {
                     "source": "name: \"Open edit history for this file\"",
-                    "target": "name: \"Open edit history for this file\""
+                    "target": "name: \"打开此文件的编辑历史\""
                 },
                 {
                     "source": "name: \"Save current edit in the edit history\"",
-                    "target": "name: \"Save current edit in the edit history\""
+                    "target": "name: \"将当前编辑保存到编辑历史中\""
                 },
                 {
                     "source": "text: \" \"",
@@ -400,19 +400,19 @@
                 },
                 {
                     "source": "text: \"No edit history\"",
-                    "target": "text: \"No edit history\""
+                    "target": "text: \"无编辑历史\""
                 },
                 {
                     "source": "text: \"No edit history file\"",
-                    "target": "text: \"No edit history file\""
+                    "target": "text: \"无编辑历史文件\""
                 },
                 {
                     "source": "text: \"Empty edit history\"",
-                    "target": "text: \"Empty edit history\""
+                    "target": "text: \"编辑历史为空\""
                 },
                 {
                     "source": "text: \"Created by \"",
-                    "target": "text: \"Created by \""
+                    "target": "text: \"创建者 \""
                 },
                 {
                     "source": "text: \"Antonio Tejada\"",
@@ -420,15 +420,15 @@
                 },
                 {
                     "source": "text: \"General\"",
-                    "target": "text: \"General\""
+                    "target": "text: \"通用\""
                 },
                 {
                     "source": "text: \"Appearance\"",
-                    "target": "text: \"Appearance\""
+                    "target": "text: \"外观\""
                 },
                 {
                     "source": "text: \"Debugging\"",
-                    "target": "text: \"Debugging\""
+                    "target": "text: \"调试\""
                 }
             ]
         }
