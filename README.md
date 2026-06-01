@@ -1,3 +1,3 @@
-# obsidian-i18n-resources
+# obsidian-i18n-resources ZH-CN
 
-obsidian-i18n-resources
+obsidian插件的简体中文翻译
