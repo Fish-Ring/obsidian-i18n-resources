@@ -50,5 +50,18 @@
         "created_at": "2026-06-01T08:49:55.799Z",
         "updated_at": "2026-06-01T08:49:55.799Z",
         "type": "plugin"
+    },
+    {
+        "id": "Y1fCIwWfB3wLufiTzBm2mGdjQ5QDhwrY",
+        "plugin": "codeblock-customizer",
+        "language": "zh-cn",
+        "version": "1.4.7",
+        "supported_versions": "1.4.7",
+        "title": "Codeblock Customizer",
+        "description": "Codeblock Customizer Localization & Tweaks",
+        "hash": "5fcaf1545fcaf1545fcaf1545fcaf154",
+        "created_at": "2026-06-01T08:52:29.474Z",
+        "updated_at": "2026-06-01T08:52:29.474Z",
+        "type": "plugin"
     }
 ]
