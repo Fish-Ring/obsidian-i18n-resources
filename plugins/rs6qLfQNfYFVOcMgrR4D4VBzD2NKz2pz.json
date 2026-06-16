@@ -586,7 +586,7 @@
                     "type": "CallExpression",
                     "name": "setDesc",
                     "source": "Give $30 off Pro. Get 30 days of Pro.",
-                    "target": "赠送 30 美元的 Pro 优惠，获得 30 天的 Pro 使用权。"
+                    "target": "Give $30 off Pro. Get 30 days of Pro."
                 },
                 {
                     "type": "CallExpression",
